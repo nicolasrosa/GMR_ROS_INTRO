@@ -1,0 +1,24 @@
+[submodule "akihiro/gmr_intro"]
+	path = akihiro/gmr_intro
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro.git
+[submodule "akihiro/gmr_intro_1"]
+	path = akihiro/gmr_intro_1
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_1.git
+[submodule "akihiro/treasure_hunt_publishers"]
+	path = akihiro/treasure_hunt_publishers
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/treasure_hunt_publishers.git
+[submodule "akihiro/gmr_intro_poo"]
+	path = akihiro/gmr_intro_poo
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_poo.git
+[submodule "akihiro/gmr_intro_3"]
+	path = akihiro/gmr_intro_3
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_3.git
+[submodule "akihiro/gmr_intro_2"]
+	path = akihiro/gmr_intro_2
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_2.git
+[submodule "akihiro/gmr_intro_4"]
+	path = akihiro/gmr_intro_4
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_4.git
+[submodule "akihiro/gmr_intro_5"]
+	path = akihiro/gmr_intro_5
+	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_5.git
