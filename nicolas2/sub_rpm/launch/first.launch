@@ -1,0 +1,14 @@
+<launch>
+
+  <node pkg="gmr_intro" type="gmr_intro_node" name="gmr_pub_vel">
+  </node>
+  
+  <node pkg="sub_rpm" type="sub_rpm_node" name="sub_left" output="screen">
+    <param name="topic_name" value="/left_rpm"/>
+  </node>
+
+  <node pkg="sub_rpm" type="sub_rpm_node" name="sub_right" output="screen">
+    <param name="topic_name" value="/right_rpm"/>
+  </node>
+
+</launch>

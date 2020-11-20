@@ -1,0 +1,17 @@
+<launch>
+
+  <param name="axle_track" value="0.5"/>
+  <param name="gear_ratio" value="20"/>
+  <param name="wheel_radius" value="0.05"/>
+  <param name="gaussian_noise_mean" value="0.0"/>
+  <param name="gaussian_noise_stddev" value="1.0"/>
+
+  <group ns="robot">
+  <node pkg="gmr_intro" type="gmr_intro_node" name="gmr_pub_vel" output="screen">
+  </node>
+  </group>
+
+  <node pkg="gmr_intro" type="gmr_odom_node" name="gmr_odom">
+  </node>
+
+</launch>

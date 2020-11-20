@@ -1,0 +1,18 @@
+<launch>
+
+  <param name="axle_track" value="0.5"/>
+  <param name="gear_ratio" value="20"/>
+  <param name="wheel_radius" value="0.05"/>
+  <param name="gaussian_noise_mean" value="0.0"/>
+  <param name="gaussian_noise_stddev" value="1.0"/>
+  
+  <node pkg="gmr_intro" type="gmr_intro_node" name="gmr_intro_node" output="screen">
+  </node>
+  
+  <node pkg="gmr_intro_2" type="gmr_intro_2_node" name="gmr_intro_2_node" output="screen" required="true">
+    <param name="nome_topico_left_rpm" value="/left_rpm"/>
+    <param name="nome_topico_right_rpm" value="/right_rpm"/>
+  </node>
+
+
+</launch>

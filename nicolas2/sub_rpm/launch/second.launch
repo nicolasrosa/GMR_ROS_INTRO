@@ -1,0 +1,29 @@
+<launch>
+  <param name="param_global" value=""/>
+  <group ns="robo1">    
+    <param name="param_grupo" value=""/>
+    <node pkg="gmr_intro" type="gmr_intro_node" name="gmr_pub_vel" output="screen">
+    </node>
+    <node pkg="sub_rpm" type="sub_rpm_node" name="sub_left" output="screen">
+      <param name="nome_topico" value="/left_rpm"/>
+    </node>
+
+    <node pkg="sub_rpm" type="sub_rpm_node" name="sub_right" output="screen">
+      <param name="nome_topico" value="/right_rpm"/>
+    </node>
+  </group>
+
+  <group ns="robo2"> 
+    <param name="param_grupo" value=""/>
+    <node pkg="gmr_intro" type="gmr_intro_node" name="gmr_pub_vel" output="screen">
+    </node>   
+    <node pkg="sub_rpm" type="sub_rpm_node" name="sub_left" output="screen">
+      <param name="nome_topico" value="/left_rpm"/>
+    </node>
+
+    <node pkg="sub_rpm" type="sub_rpm_node" name="sub_right" output="screen">
+      <param name="nome_topico" value="/right_rpm"/>
+    </node>
+  </group>
+
+</launch>

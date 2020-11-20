@@ -1,0 +1,28 @@
+<launch>
+
+  <param name="axle_track" value="0.5"/>
+  <param name="gear_ratio" value="20"/>
+  <param name="wheel_radius" value="0.05"/>
+
+  <param name="gaussian_noise_mean" value="0.0"/>
+  <param name="gaussian_noise_stddev" value="1.0"/>
+  <param name="rpm_ref" value="120"/>
+  
+  <node pkg="gmr_intro" type="gmr_intro_node" name="gmr_intro_node" output="screen">
+  </node>
+  
+  <node pkg="gmr_intro_poo" type="gmr_intro_poo_node" name="gmr_intro_poo_node" output="screen" required="true">
+    <param name="topic_name_left_rpm" value="/left_rpm"/>
+    <param name="topic_name_right_rpm" value="/right_rpm"/>
+    <param name="time_between_toggles" value="-2.0"/>
+  </node>
+
+  <!--- tf2 Transformations -->
+  <!--- <node pkg="tf" type="static_transform_publisher" name="map2base_link" args="0 0 0 0 0 0 map base_link 50"/> -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="camera2base_link" args="0.15 0 0.1 0 0.523599 0 base_link frontal_camera"/>  <!--- Camera to Centro de Gravidade (CG) -->
+  
+  <!--- RViz -->
+  <!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find gmr_intro_poo)/rviz/gmr_intro_poo.rviz" /> -->
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find gmr_intro_poo)/rviz/gmr_intro_5.rviz" />
+
+</launch>

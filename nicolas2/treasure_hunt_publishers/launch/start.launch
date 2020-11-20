@@ -1,0 +1,3 @@
+<launch>
+<node pkg="treasure_hunt_publishers" type="treasure_hunt_publishers_node" name="follow_the_hints" output="screen"/>
+</launch>
