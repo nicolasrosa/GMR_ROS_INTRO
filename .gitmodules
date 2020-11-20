@@ -22,3 +22,6 @@
 [submodule "akihiro/gmr_intro_5"]
 	path = akihiro/gmr_intro_5
 	url = https://nicolasrosa29@bitbucket.org/grupomecatronica/gmr_intro_5.git
+[submodule "nicolas"]
+	path = nicolas
+	url = ../../nicolasrosa-forks/SEM5945.git
