@@ -2,7 +2,7 @@
 
 Este repositório contém a evolução da classe RobotClass ao longo dos tutoriais. Cada branch possui a versão respectiva ao tutorial. 
 
-####*Para quem não está familiarizado com Git:*
+#### *Para quem não está familiarizado com Git:*
 
 Clone com o comando:
 ```console
